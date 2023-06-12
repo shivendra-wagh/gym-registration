@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>360 Fitness</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS reset */
+    body {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url(image/we.jpg);
+        height: 4544px;
+        font-family: cursive;
+    }
+
+    .left {
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+        top: 20px;
+    }
+
+    .left img {
+        width: 123px;
+        filter: invert(100%);
+    }
+
+    .left div {
+        text-align: center;
+    }
+
+    .mid {
+        display: block;
+        width: 40%;
+        margin: 20px auto;
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        font-size: 18px;
+        display: inline-block;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 17px 13px;
+
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: grey;
+
+    }
+
+    .btn {
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(41, 40, 40);
+    }
+
+    .container {
+        border: 2px solid rgb(248, 234, 234);
+        margin: 106px 80px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 28px;
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 400px;
+        padding: 6px auto;
+        border: 2px solid black;
+        margin: 3px auto;
+        font-size: 25px;
+        border-radius: 8px;
+        font-family: cursive;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        width: 23%;
+        margin: auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="image/dumbel.png">
+            <div>360 Fitness</div>
+
+        </div>
+
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness calculation</a></li>
+                <li><a href="#">Contact Us</a></li>
+
+            </ul>
+        </div>
+
+        <!-- right box for navbar -->
+        <div class="right">
+            <button class="btn">call us now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1> Join the Best Gym of India</h1>
+        <form action="no.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your NAME">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your AGE">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your GENDER">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your LOCALITY">
+            </div>
+
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
